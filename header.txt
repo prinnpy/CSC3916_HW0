@@ -1,0 +1,44 @@
+Expires → Tue, 29 Jan 2019 18:49:53 GMT
+- The Expires header contains the date/time after which the response is considered stale.
+
+Date → Tue, 29 Jan 2019 18:49:53 GMT
+- The Date general HTTP header contains the date and time at which the message was originated.
+
+Cache-Control → private, max-age=0, must-revalidate, no-transform
+- The Cache-Control general-header field is used to specify directives for caching mechanisms in both requests and responses. 
+   Caching directives are unidirectional, meaning that a given directive in a request is not implying that the same directive is to be given in the response.
+
+ETag → "IUREzboS_XZycecz4xfru1ipYfo/kC7VP1W1RFFBiXVpM4B0n-CgKwI"
+- The ETag HTTP response header is an identifier for a specific version of a resource. It allows caches to be more efficient, and saves bandwidth, 
+   as a web server does not need to send a full response if the content has not changed.
+
+Vary → Origin
+- The Vary HTTP response header determines how to match future request headers to decide whether a cached response can be used rather than requesting a fresh one from the origin server.
+
+Vary → X-Origin
+- The Vary HTTP response header determines how to match future request headers to decide whether a cached response can be used rather than requesting a fresh one from the origin server.
+
+Content-Type → application/json; charset=UTF-8
+- The Content-Type entity header is used to indicate the media type of the resource.
+
+Content-Encoding → gzip
+- The Content-Encoding entity header is used to compress the media-type.
+
+X-Content-Type-Options → nosniff
+- The X-Content-Type-Options response HTTP header is a marker used by the server to indicate that the MIME types advertised in the Content-Type headers should not be changed and be followed.
+
+X-Frame-Options → SAMEORIGIN
+- The X-Frame-Options HTTP response header can be used to indicate whether or not a browser should be allowed to render a page in a <frame>, <iframe>, <embed> or <object> . 
+  Sites can use this to avoid clickjacking attacks, by ensuring that their content is not embedded into other sites.
+
+X-XSS-Protection → 1; mode=block
+- The HTTP X-XSS-Protection response header is a feature of Internet Explorer, Chrome and Safari that stops pages from loading when they detect reflected cross-site scripting (XSS) attacks.
+
+Server → GSE
+- The Server header contains information about the software used by the origin server to handle the request.
+
+Alt-Svc → quic=":443"; ma=2592000; v="44,43,39"
+- The Alt-Svc header is used to list alternate ways to reach this website.
+
+Transfer-Encoding → chunked
+- The Transfer-Encoding header specifies the form of encoding used to safely transfer the entity to the user.
